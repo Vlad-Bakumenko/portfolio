@@ -33,7 +33,7 @@ const Experience = ({language}) => {
                 {language ? experience.role : experience.role_de} -{" "}
                 <span className="text-purple-100">{experience.company}</span>
               </h6>
-              <p className="mb-4 text-neutral-300 md:text-base">{language ? experience.description : experience.description_de}</p>
+              <p className="mb-4 text-neutral-300 md:text-base text-justify">{language ? experience.description : experience.description_de}</p>
               {language ? experience.technologies.map((technology, index) => (
                 <span
                   key={index}

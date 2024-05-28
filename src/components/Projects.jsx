@@ -18,7 +18,7 @@ const Projects = ({language}) => {
             </motion.div>
             <motion.div whileInView={{opacity:1,x:0}} initial={{opacity:0,x:100}} transition={{duration:1}} className="w-full max-w-2xl lg:w-3/4">
                 <h6 className="mb-2 font-semibold text-2xl">{project.title}</h6>
-                <p className="mb-4 text-neutral-300 md:text-base">{language ? project.description : project.description_de}</p>
+                <p className="mb-4 text-neutral-300 md:text-base text-justify">{language ? project.description : project.description_de}</p>
                 {project.technologies.map((tech,index)=> (
                     <span key={index} className="mr-2 mt-4 rounded bg-purple-400 px-2 py-1/2 text-base font-semibold md:text-base text-neutral-900 tracking-wide inline-block">{tech}</span>
                 ))}

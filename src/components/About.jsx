@@ -16,7 +16,7 @@ const About = ({language}) => {
         </motion.div>
         <motion.div whileInView={{opacity:1, x:0}} initial={{opacity:0, x:100}} transition={{duration:0.5}} className="w-full lg:w-1/2">
           <div className="flex justify-center text-center md:text-start">
-            <p className="my-2 max-w-xl py-6 md:text-xl">{language ? ABOUT_TEXT : ABOUT_TEXT_DE}</p>
+            <p className="my-2 max-w-xl py-6 md:text-xl text-justify">{language ? ABOUT_TEXT : ABOUT_TEXT_DE}</p>
           </div>
         </motion.div>
       </div>
