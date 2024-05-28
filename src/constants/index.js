@@ -67,7 +67,7 @@ export const PROJECTS = [
     description:
       "Vid-Tube is a React application that allows users to search for and watch videos from various categories. The application is designed to provide a seamless and enjoyable video watching experience for users.",
     description_de: "Vid-Tube ist eine React-Anwendung, mit der Benutzer Videos aus verschiedenen Kategorien suchen und ansehen können. Die Anwendung ist so konzipiert, dass sie Benutzern ein nahtloses und unterhaltsames Videoerlebnis bietet.",
-    technologies: ["React.js + Vite", "CSS3", "JavaScript"],
+    technologies: ["React.js + Vite", "CSS3", "JavaScript", "YouTube Data API v3"],
     links: [
       { resource: "Live Demo", link: "https://vid-tube-rx2n.onrender.com/" },
     ],
