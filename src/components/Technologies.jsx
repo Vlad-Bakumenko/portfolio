@@ -6,6 +6,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaSass } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
 import {animate, motion} from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -37,6 +38,9 @@ const Technologies = ({language}) => {
         </motion.div>
         <motion.div variants={iconVariants(4)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
           <SiTailwindcss className="text-7xl text-cyan-300"/>
+        </motion.div>
+        <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+          <SiJavascript className="text-7xl text-yellow-400"/>
         </motion.div>
         <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
           <RiReactjsLine className="text-7xl text-cyan-400"/>
