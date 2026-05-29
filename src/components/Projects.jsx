@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
@@ -20,11 +21,12 @@ const Projects = ({language}) => {
                 <h6 className="mb-2 font-semibold text-2xl">{project.title}</h6>
                 <p className="mb-4 text-neutral-300 md:text-base text-justify">{language ? project.description : project.description_de}</p>
                 {project.technologies.map((tech,index)=> (
-                    <span key={index} className="mr-2 mt-4 rounded bg-purple-400 px-2 py-1/2 text-base font-semibold md:text-base text-neutral-900 tracking-wide inline-block">{tech}</span>
+                    <span key={index} className="mr-2 mt-4 rounded bg-purple-400 px-2 py-0.5 text-base font-semibold md:text-base text-neutral-900 tracking-wide inline-block">{tech}</span>
                 ))}
                 {project.links.map((link,index)=>(
                   <a
                   href={link.link}
+                  rel="noopener noreferrer"
                   target="_blank" key={index}
                   className="w-1/3 md:w-1/5 rounded-3xl bg-neutral-300 py-1 md:p-2 text-sm md:text-base font-semibold text-purple-700 text-center tracking-wide block hover:underline hover:scale-110 mt-7"
                 >
@@ -38,6 +40,10 @@ const Projects = ({language}) => {
       </div>
     </div>
   );
+};
+
+Projects.propTypes = {
+  language: PropTypes.bool,
 };
 
 export default Projects;

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { EXPERIENCES } from "../constants";
 import { motion } from "framer-motion";
 
@@ -37,14 +38,14 @@ const Experience = ({language}) => {
               {language ? experience.technologies.map((technology, index) => (
                 <span
                   key={index}
-                  className="mr-2 mt-4 rounded bg-purple-400 px-2 py-1/2 text-sm md:text-base font-semibold text-neutral-900 tracking-wide inline-block"
+                  className="mr-2 mt-4 rounded bg-purple-400 px-2 py-0.5 text-sm md:text-base font-semibold text-neutral-900 tracking-wide inline-block"
                 >
                   {technology}
                 </span>
               )) : experience.technologies_de.map((technology, index) => (
                 <span
                   key={index}
-                  className="mr-2 mt-4 rounded bg-purple-400 px-2 py-1/2 text-sm md:text-base font-semibold text-neutral-900 tracking-wide inline-block"
+                  className="mr-2 mt-4 rounded bg-purple-400 px-2 py-0.5 text-sm md:text-base font-semibold text-neutral-900 tracking-wide inline-block"
                 >
                   {technology}
                 </span>
@@ -55,6 +56,10 @@ const Experience = ({language}) => {
       </div>
     </div>
   );
+};
+
+Experience.propTypes = {
+  language: PropTypes.bool,
 };
 
 export default Experience;

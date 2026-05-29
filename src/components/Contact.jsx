@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 
@@ -13,6 +14,10 @@ const Contact = ({language}) => {
       </div>
     </div>
   );
+};
+
+Contact.propTypes = {
+  language: PropTypes.bool,
 };
 
 export default Contact;
