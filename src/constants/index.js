@@ -14,19 +14,29 @@ export const ABOUT_TEXT = {
 
 export const EXPERIENCES = [
   {
-    year: { en: "2023 - Present", de: "2023 - Gegenwart" },
+    id: "nosto-frontend",
+    year: { en: "2024 - Present", de: "2024 - Gegenwart" },
+    role: { en: "Frontend Developer", de: "Frontend-Entwickler" },
+    company: "Nosto GmbH",
+    description: {
+      en: `Developing and maintaining frontend features for an e-commerce personalization platform. Building recommendation widgets, overlays, and campaign templates using Preact and TypeScript. Implementing dynamic storefronts via Apache Velocity and Mustache templates, and maintaining CI/CD pipelines with GitHub Actions.`,
+      de: `Entwicklung und Pflege von Frontend-Funktionen für eine E-Commerce-Personalisierungsplattform. Erstellung von Empfehlungs-Widgets, Overlays und Kampagnen-Templates mit Preact und TypeScript. Implementierung dynamischer Storefronts über Apache Velocity und Mustache-Templates sowie Verwaltung von CI/CD-Pipelines mit GitHub Actions.`,
+    },
+    technologies: ["HTML", "CSS", "JavaScript", "TypeScript", "Preact", "Apache Velocity", "Mustache", "Liquid", "GitHub Actions"],
+  },
+  {
+    id: "dci-tutor",
+    year: { en: "2023 - 2024", de: "2023 - 2024" },
     role: { en: "Full Stack Web Development Tutor", de: "Tutor für Full-Stack-Webentwicklung" },
     company: "DCI Digital Career Institute",
     description: {
-      en: `I'm tutoring and supporting colleagues by helping them understand the basic concepts of HTML, CSS, JavaScript, React.js, Node.js, Express.js and MongoDB, and develop web applications by using them.`,
-      de: `Ich gebe meinen Kollegen Nachhilfe und unterstütze sie dabei, die grundlegenden Konzepte von HTML, CSS, JavaScript, React.js, Node.js, Express.js und MongoDB zu verstehen und mithilfe dieser Konzepte Webanwendungen zu entwickeln.`,
+      en: `Tutored and supported colleagues by helping them understand the core concepts of HTML, CSS, JavaScript, React.js, Node.js, Express.js and MongoDB, and develop web applications using them.`,
+      de: `Nachhilfe und Unterstützung von Kollegen beim Verständnis der Grundkonzepte von HTML, CSS, JavaScript, React.js, Node.js, Express.js und MongoDB sowie bei der Entwicklung von Webanwendungen.`,
     },
-    technologies: {
-      en: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB"],
-      de: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB"],
-    },
+    technologies: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB"],
   },
   {
+    id: "danaos-officer",
     year: { en: "2020 - 2022", de: "2020 - 2022" },
     role: { en: "Third Officer", de: "Dritter Kapitänsgehilfe" },
     company: "Danaos Shipping Company Ltd.",
@@ -34,15 +44,13 @@ export const EXPERIENCES = [
       en: `Ensure safe navigation with use of Information Computer Technologies, Data transmission systems, Navigation Automated Complexes`,
       de: `Gewährleistung einer sicheren Navigation durch den Einsatz von Informations- und Computertechnologien, Datenübertragungssystemen und automatisierten Navigationskomplexen`,
     },
-    technologies: {
-      en: ["Information Computer Technologies", "Data transmission systems", "Navigation Automated Complexes"],
-      de: ["Informations-Computer-Technologien", "Datenübertragungssysteme", "Navigation Automatisierte Komplexe"],
-    },
+    technologies: ["Information Computer Technologies", "Data transmission systems", "Navigation Automated Complexes"],
   },
 ];
 
 export const PROJECTS = [
   {
+    id: "vid-tube",
     title: "Vid-tube",
     image: project1,
     description: {
@@ -53,6 +61,7 @@ export const PROJECTS = [
     links: [{ resource: "Live Demo", link: "https://vid-tube-rx2n.onrender.com/" }],
   },
   {
+    id: "ai-summarizer",
     title: "AI-summarizer",
     image: project2,
     description: {
@@ -63,6 +72,7 @@ export const PROJECTS = [
     links: [{ resource: "Live Demo", link: "https://ai-summarizer-v6fa.onrender.com/" }],
   },
   {
+    id: "rides-carsharing",
     title: '"Rides" - carsharing company',
     image: project3,
     description: {
