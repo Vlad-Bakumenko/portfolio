@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import { HERO_CONTENT, HERO_CONTENT_DE } from "../constants";
 import profile from "../assets/profile.jpg";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const container = (delay) => ({
     hidden:{x:-100, opacity:0},
@@ -35,6 +36,10 @@ const Hero = ({language}) => {
       </div>
     </div>
   );
+};
+
+Hero.propTypes = {
+  language: PropTypes.bool,
 };
 
 export default Hero;

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import aboutImg from "../assets/about.jpg";
 import { ABOUT_TEXT, ABOUT_TEXT_DE } from "../constants";
 import { motion } from "framer-motion";
@@ -22,6 +23,10 @@ const About = ({language}) => {
       </div>
     </div>
   );
+};
+
+About.propTypes = {
+  language: PropTypes.bool,
 };
 
 export default About;

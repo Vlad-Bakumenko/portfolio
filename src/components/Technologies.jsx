@@ -7,7 +7,8 @@ import { FaSass } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
-import {animate, motion} from "framer-motion";
+import PropTypes from "prop-types";
+import {motion} from "framer-motion";
 
 const iconVariants = (duration) => ({
   initial:{y:-10},
@@ -57,6 +58,10 @@ const Technologies = ({language}) => {
       </motion.div>
     </div>
   );
+};
+
+Technologies.propTypes = {
+  language: PropTypes.bool,
 };
 
 export default Technologies;
