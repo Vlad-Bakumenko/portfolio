@@ -4,13 +4,18 @@ import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
 
 const container = (delay) => ({
-    hidden:{x:-100, opacity:0},
-    visible:{
-        x:0,
-        opacity:1,
-        transition: {duration:0.5, delay: delay}
-    }
+  hidden: { x: -100, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.5, delay },
+  },
 });
+
+const profileVariants = {
+  hidden: { x: 100, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { duration: 1, delay: 1.2 } },
+};
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -32,7 +37,7 @@ const Hero = () => {
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-            <motion.img initial={{x:100, opacity:0}} animate={{x:0,opacity:1}} transition={{duration:1, delay:1.2}} src={profile} alt="Vladyslav Bakumenko" className="rounded-2xl" />
+            <motion.img variants={profileVariants} initial="hidden" animate="visible" src={profile} alt="Vladyslav Bakumenko" className="rounded-2xl" />
           </div>
         </div>
       </div>
