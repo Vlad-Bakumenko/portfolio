@@ -7,8 +7,8 @@ import { FaSass } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
-import PropTypes from "prop-types";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+import { useLanguage } from "../context/LanguageContext";
 
 const iconVariants = (duration) => ({
   initial:{y:-10},
@@ -23,10 +23,11 @@ const iconVariants = (duration) => ({
   }
 })
 
-const Technologies = ({language}) => {
+const Technologies = () => {
+  const { t } = useLanguage();
   return (
     <div className="border-b border-neutral-800 pb-24">
-      <motion.h2 whileInView={{opacity:1,y:0}} initial={{opacity:0,y:-50}} transition={{duration:1.5}} className="my-20 text-center text-4xl">{language?"Technologies" : "Technologien"}</motion.h2>
+      <motion.h2 whileInView={{opacity:1,y:0}} initial={{opacity:0,y:-50}} transition={{duration:1.5}} className="my-20 text-center text-4xl">{t("Technologies", "Technologien")}</motion.h2>
       <motion.div whileInView={{opacity:1,x:0}} initial={{opacity:0,x:-100}} transition={{duration:1.5}} className="flex flex-wrap items-center justify-center gap-4">
       <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
           <FaHtml5 className="text-7xl text-orange-500"/>
@@ -58,10 +59,6 @@ const Technologies = ({language}) => {
       </motion.div>
     </div>
   );
-};
-
-Technologies.propTypes = {
-  language: PropTypes.bool,
 };
 
 export default Technologies;
