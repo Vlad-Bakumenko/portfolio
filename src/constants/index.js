@@ -58,7 +58,7 @@ export const PROJECTS = [
       de: "Vid-Tube ist eine React-Anwendung, mit der Benutzer Videos aus verschiedenen Kategorien suchen und ansehen können. Die Anwendung ist so konzipiert, dass sie Benutzern ein nahtloses und unterhaltsames Videoerlebnis bietet.",
     },
     technologies: ["React.js + Vite", "CSS3", "JavaScript", "YouTube Data API v3"],
-    links: [{ resource: "Live Demo", link: "https://vid-tube-rx2n.onrender.com/" }],
+    links: [{ resource: "Live Demo", link: "https://vid-tube-liart.vercel.app" }],
   },
   {
     id: "ai-summarizer",
@@ -69,7 +69,7 @@ export const PROJECTS = [
       de: "React-Anwendung, die Artikel mithilfe von OpenAIs GPT-4 über RapidAPI extrahiert und zusammenfasst. Sie verwendet Redux für die API-Verwaltung, Tailwind CSS für das Styling und localStorage zum Speichern des Suchverlaufs.",
     },
     technologies: ["React.js + Vite", "Tailwind CSS", "Redux", "OpenAI's GPT-4 through RapidAPI"],
-    links: [{ resource: "Live Demo", link: "https://ai-summarizer-v6fa.onrender.com/" }],
+    links: [{ resource: "Live Demo", link: "https://ai-summarizer-liard-two.vercel.app" }],
   },
   {
     id: "rides-carsharing",
